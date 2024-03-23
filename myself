@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5e6ff; 
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-family: 'Arial Black', sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .profile-image {
+      width: 250px;
+      height: 300px; 
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      object-fit: cover; 
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #333;
+      font-size: 20px;
+    }
+    .about-me {
+      margin-top: 30px;
+      cursor: pointer; 
+    }
+    .contact-number {
+      display: none;
+    }
+    .image-button{
+      display:block;
+      margin:20px auto;
+      cursor:pointer;
+    }
+    .skills-container {
+      display: none;
+      margin-top: 30px;
+    }
+    .skills-container.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="stylish-text">Here We Meet</h1>
+</header>
+
+<div class="container">
+  <img src="C:\Users\avishkar\Pictures\image\WhatsApp Image 2024-03-18 at 19.49.49_be2bbf7f.jpg" alt="Avishkar Poojary" class="profile-image">
+  <div class="about-me" onclick="alert('long time no see');">
+    <h2>Hi I'm</h2>
+    <p>Avishkar Poojary</p>
+  </div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/profile.php?id=61554654328405&mibextid=ZbWKwL" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/avishkar_poojary/" target="_blank">Instagram</a>
+    <a href="https://twitter.com/Avishkarpoojari" target="_blank">Twitter</a>
+    <a href="https://www.linkedin.com/in/avishkar-poojary-252154292/" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/917337765140" target="_blank">WhatsApp</a>
+    <a href="mailto:avishkarpoojary@gmail.com" target="_blank">Gmail</a>
+    <a href="#" onclick="toggleSkills()">Skills</a>
+  </div>
+  <div class="skills-container" id="skillsContainer">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>Dsa C++</li>
+      <li>Manual and Automation Testing</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function toggleSkills() {
+    var skillsContainer = document.getElementById("skillsContainer");
+    skillsContainer.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
